@@ -1,0 +1,548 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+
+}
+.to-up {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 100px;
+    height: 50px;
+    width: 50px;
+    background-color: #66d16f;
+    box-shadow: 0 0 10px silver;
+    scroll-behavior: smooth;
+  }
+.w-1200 {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* блок первый */
+header {
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    width: 100%;
+    padding: 20px 100px;
+    padding-top: 30px;
+    background-color: #fff;
+    box-shadow: 0px 6px 13px -4px rgba(34, 60, 80, 0.2);
+    position: fixed
+  
+    
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 100px;
+}
+
+/* navigation */
+
+nav {
+    font-family: 'TT travels';
+    font-style: normal;
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 400;
+    
+
+
+}
+
+nav a {
+    color: #000000;
+}
+
+a:hover {
+    transition: 0.5s;
+    color: #58AD53;
+}
+
+.btn_1 {
+    font-family: 'TT travels';
+    font-style: normal;
+    border-radius: 30px;
+    border: 2px solid #58AD53;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 12px;
+    font-weight: 400;
+    background-color: transparent;
+    color: #000000;
+    margin-right: 0;
+}
+
+.btn_1:hover {
+    background-color: #58AD53;
+    transition: 0.5s;
+}
+
+
+.promo {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding-top: 106px;
+    
+
+}
+.promo h1 {
+    padding-top: 106px;
+    font-size: 96px;
+    
+}
+
+
+.promo p {
+    font-size: 20px;
+    max-width: 460px;
+    margin-top: 17px;
+    margin-bottom: 50px;
+    
+}
+
+.btn_bg {
+    font-family: 'TT travels';
+    font-style: normal;
+    font-size: 30px;
+    border-radius: 30px;
+    border: 2px solid #58AD53;
+    cursor: pointer;
+    padding: 20px 60px;
+    font-weight: 400;
+    background-color: transparent;
+    color: #000000;
+}
+
+.btn_bg:hover {
+    background-color: #58AD53;
+    transition: 0.5s;
+}
+
+.video {
+    left: 0;
+    top: 0;
+    display: block;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+/* navigation */
+/* блок первый */
+
+/* блок второй */
+.sec {
+    padding-top: 150px;
+    
+
+}
+
+.sec h2 {
+    padding-top: 30px;
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.sec ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.sec ul li {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.sec ul li:hover{
+    transition: .5s;
+    color: #3ca444;
+}
+.result {
+    display: none;
+}
+
+
+.result.active {
+    width: 1000px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    gap: 100px;
+    justify-content: center;
+}
+
+
+.card {
+    position: relative;
+    padding: 20px;
+    height: 100%;
+
+}
+
+.card_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.card_img img {
+    width: 120%;
+    height: 120%;
+}
+
+.card button {
+    position: absolute;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+    bottom: -15px;
+    left: calc(50% - 15px);
+    opacity: 0;
+    border-radius: 100px;
+    background-color: #62db6aa1;
+    border: 1px solid #000000;
+
+}
+
+.card p {
+    height: 100%;
+    text-align: center;
+    padding: 50px;
+    border-radius: 20px;
+    background-color: #ffffffbb;
+    opacity: 0;
+}
+
+.card:hover button {
+    opacity: 1;
+    transition: .5s;
+}
+
+.card:hover p {
+    opacity: 1;
+    transition: .5s;
+}
+
+/* блок второй */
+
+/* plus */
+.onas {
+    padding-top: 100px;
+    align-items: center;
+    padding-left: 187px;
+    display: flex;
+    gap: 165px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.onas h2 {
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.onas h3 {
+    font-size: 20px;
+    max-width: 267px;
+    padding-top: 12px;
+}
+
+.onas-left p {
+    font-size: 20px;
+    max-width: 248px;
+    padding-top: 24px;
+
+}
+
+.bt_onas {
+    margin-top: 36px;
+    border-radius: 30px;
+    border: 3px solid #58AD53;
+    cursor: pointer;
+    padding: 11px 30px;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: transparent;
+    color: #231f1f;
+}
+
+.bt_onas:hover {
+    background-color: #58AD53;
+    color: #F0E9E9;
+    transition: 0.5s;
+}
+
+
+.onas-right li {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    margin-bottom: 33px;
+
+}
+
+.onas-right li p {
+    max-width: 330px;
+}
+
+.onas-list1 {
+    position: relative;
+}
+
+.onas-list2 {
+    position: relative;
+}
+
+.onas-list3 {
+    position: relative;
+}
+
+.effects:hover {
+    transition: 0.5s;
+    transform: scale(0.9);
+}
+
+/* plus */
+
+
+/* блок четвертый отзывы  */
+.reviews{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.ppp{
+    font-size: 40px;
+    font-family: "TT travels";
+    font-weight: bold;
+    text-align: center;
+}
+
+.slider{ 
+    position: relative;  
+    height: 400px; 
+    margin: 0 auto; 
+    margin-top: 50px;
+    overflow: hidden; 
+} 
+  
+input[name="r"]{ 
+    display: none; 
+} 
+ 
+.slides{ 
+    width: 400%; 
+    height: 100%; 
+    display: flex; 
+} 
+ 
+.slide{ 
+    width: 25%; 
+    transition: .6s; 
+} 
+
+.navigation{ 
+    position: absolute; 
+    left: 45%;
+    bottom: 15px; 
+    display: flex; 
+    justify-content: space-around8;
+    transition: .4s;
+} 
+ 
+.lab { 
+    width: 15px; 
+    height: 15px; 
+    background: #3ca444; 
+    margin: 5px;
+    border-radius: 10px; 
+    cursor: pointer; 
+    opacity: 0.5;
+} 
+ 
+.lab:hover{ 
+    opacity: 0.8; 
+    transform: scale(1.1); 
+    transition: .3s;
+} 
+ 
+#r1:checked {
+    margin-left: 0;
+}
+ 
+#r2:checked ~ .s1 {
+    margin-left: -25%;
+}
+
+.reviews__items{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.reviews__items .review{
+    border-radius: 30px;
+    width: 400px;
+    height: 300px;
+    padding: 30px;
+    border: 1px solid #3ca444;
+}
+.reviews__items .review p{
+    font-size: 24px;
+}
+.reviews__items .review img{
+    width: 48px;
+    height: 48px;
+}
+.review .review__user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.review .review__text{
+    margin-top: 30px;
+}
+/* блок четвертый отзывы  */
+
+/* СВЯЗЬ С НАМИ */
+
+.contact{
+    margin-top: 100px;
+    width: 100%;
+    height: 60vh;
+    display: grid;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.contact-in{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0px 0px 10px 0px #666;
+}
+
+.contact-map{
+    width: 100%;
+    height: auto;
+    flex: 50%;
+}
+
+.contact-map iframe{
+    width: 100%;
+    height: 100%;
+
+}
+.contact-form{
+    width: 100%;
+    height: auto;
+    flex: 50%;
+    text-align: center;
+}
+
+.contact-form h1{
+    margin-bottom: 10px;
+
+
+}
+.contact-form-txt{
+    background-color: #3ca44511;
+    width: 90%;
+    height: 40px;
+    color: #000000;
+    border:2px #022c05c8;
+    border-radius: 50px;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+.contact-form-txtarea{
+    background-color: #3ca44511;
+    width: 90%;
+    height: 130px;
+    color: #000000;
+    border:  1px #3ca445;
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.contact-form-btn{
+    width: 50%;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    background: #57ad535a;
+    text-transform: uppercase;
+    padding: 10px 0;
+    cursor: pointer;
+    font-size: 18px;
+}
+/* СВЯЗЬ С НАМИ */
+
+/* подвал */
+.footer{
+    background:#3ca44571;
+    padding:30px 0px;
+    text-align:center;
+    }
+    
+    .footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:rgb(0, 0, 0);
+    font-size:0.8em;
+    }
+    
+    .footer .row a{
+    text-decoration:none;
+    color:rgb(0, 0, 0);
+    transition:0.5s;
+    }
+    
+    .footer .row a:hover{
+    color:#fff;
+    }
+    
+    .footer .row ul{
+    width:100%;
+    }
+    
+    .footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }
+    /* подвал */
+    
+
+
